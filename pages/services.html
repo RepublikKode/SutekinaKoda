@@ -1,46 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sutekina Koda | Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <style>
+      .services-section {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+      }
+
+      .services-heading {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .service-item {
+        text-align: center;
+      }
+
+      .service-icon {
+        font-size: 48px;
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+
+      .service-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .service-description {
+        font-size: 16px;
+        color: #777;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+    </style>
   </head>
-</head>
-<body>
+  <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sutekina Koda</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sutekina Koda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- section services start -->
+    <section class="services-section">
+      <div class="container">
+        <div class="card services-heading">
+          <div class="row no-gutters">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <img src="/assets/sutekina.png" class="card-img" style="max-width: 90%" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body align-items-center mb-5">
+                <h2 class="card-title mt-5">Butuh Jasa Kami?</h2>
+                <p class="card-text">
+                  Disini kami membuka jasa pembuatan <b>Website Blog Pribadi, Website Company Profile, Aplikasi Berbasis <br />
+                  Website, Alat berbasis Internet of Things, Game, </b> dan juga <b>ChatBot. </b>
+                </p>
+                <p>
+                  Bisa langsung hubungi kami di <a href="contact.html">sini</a>
+                  <br />
+                  atau langsung menghubungi developer terkait jasa yang ingin dipesan 
+                </p>
+                <p style="color: #777;">scroll ke bawah <i class="bi bi-arrow-90deg-down"></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    <!-- Navbar End -->
-    <!--  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+
+        <div class="row m-2">
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/ux.jpeg" width="192" height="400" class="card-img-top img-fluid">
+              <div class="card-body m-4">
+                <i class="bi bi-palette-fill service-icon"></i>
+                <h3 class="card-title service-title">Design Website</h3>
+                <p class="card-text service-description">Sebelum memesan pembuatan jasa website blog pribadi, company profile dan aplikasi berbasis web, sebaiknya
+                  Anda menghubungi developer kami untuk memesan desaign website yang Anda inginkan.
+                </p>
+                <a href="https://www.instagram.com/yowshiiiiih" target="_blank" class="btn btn-secondary">Hubungi UI/UX</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/blog.jpeg" class="card-img-top img-fluid">
+              <div class="card-body">
+                <i class="bi bi-code-slash service-icon"></i>
+                <h3 class="card-title service-title">Website Blog Pribadi</h3>
+                <p class="card-text service-description">Developer kami menyediakan layanan pembuatan website blog pribadi. Anda dapat meminta penggunaan berbagai bahasa pemrograman, termasuk HTML, HTML5, CSS, Bootstrap, Tailwind, SASS, SCSS, serta bahasa pemrograman JavaScript dan PHP. Kami siap membantu Anda dalam mengembangkan website blog pribadi yang sesuai dengan kebutuhan Anda.
+                </p>
+                <a href="https://www.instagram.com/lang_andp" target="_blank" class="btn btn-secondary">Hubungi Developer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/cp2.jpeg" alt="cp" class="card-img-top img-fluid">
+              <div class="card-body">
+                <i class="bi bi-building service-icon"></i>
+              <h3 class="card-title service-title">Website Company Profile</h3>
+              <p class="card-text service-description">Developer kami menyediakan layanan pembuatan website company profile. Anda dapat meminta penggunaan berbagai bahasa pemrograman, termasuk HTML, HTML5, CSS, Bootstrap, Tailwind, SASS, SCSS, serta bahasa pemrograman JavaScript dan PHP. Kami siap membantu Anda dalam mengembangkan website company profile yang sesuai dengan kebutuhan Anda.</p>
+              <a href="https://www.instagram.com/lang_andp" target="_blank" class="btn btn-secondary">Hubungi Developer</a>
+            </div>
+            </div>
+            </div>
+          
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/apk.jpeg" class="img-fluid">
+              <div class="card-body m-3">
+              <i class="bi bi-window-split service-icon"></i>
+              <h3 class="service-title">Aplikasi Berbasis Website</h3>
+              <p class="service-description">Developer kami menyediakan layanan pembuatan aplikasi berbasis website. Anda dapat meminta penggunaan berbagai bahasa pemrograman, termasuk HTML, HTML5, CSS, Bootstrap, Tailwind, SASS, SCSS, serta bahasa pemrograman JavaScript dan PHP. Kami siap membantu Anda dalam mengembangkan aplikasi berbasis website yang sesuai dengan kebutuhan Anda.</p>
+              <a href="https://www.instagram.com/lang_andp" target="_blank" class="btn btn-secondary">Hubungi Developer</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/iot.png" class="img-fluid">
+              <div class="card-body">
+              <i class="bi bi-router-fill service-icon"></i>
+              <h3 class="service-title">Internet Of Things</h3>
+              <p class="service-description">Perkembangan teknologi semakin meningkat, banyak pekerjaan yang sebelumnya dilakukan secara manual kini dapat digantikan dengan alat berbasis Internet of Things. Sutekina Koda menyediakan layanan pembuatan alat berbasis IoT yang dapat mengotomatiskan pekerjaan Anda dengan bantuan teknologi. 
+              </p>
+              <a href="https://www.instagram.com/fesloth" target="_blank" class="btn btn-secondary">Hubungi IOT Engineer</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/game.jpeg" class="img-fluid">
+              <div class="card-body">
+              <i class="bi bi-controller service-icon"></i>
+              <h3 class="service-title">Game</h3>
+              <p class="service-description">Bosan dengan game yang saat ini Anda mainkan dan memiliki ide untuk membuat game sendiri, tetapi tidak tahu bagaimana mewujudkannya? Sutekina Koda dapat membantu Anda dalam pembuatan game sesuai dengan ide-ide kreatif Anda.
+              </p>
+              <a href="#" target="_blank" class="btn btn-secondary">Hubungi Game Developer</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card service-item">
+              <img src="/assets/chat bot.jpeg" class="img-fluid">
+              <div class="card-body">
+              <i style="font-size: 40px;" class="bi bi-chat-square-text service-icon"></i> <i class="bi bi-robot service-icon"></i>
+              <h3 class="service-title">Chat Bot</h3>
+              <p class="service-description">Kami juga melayani pembuatan Chat Bot yang bisa melakukan banyak hal sesuai kebutuhan Anda. Anda bisa memesan chatbot untuk bantuan informasi, tempat rekomendasi, edukasi, dan lainnya. Silahkan langsung hubungi developer untuk mengetahui lebih lanjut. </p>
+              <a href="#" target="_blank" class="btn btn-secondary">Hubungi Cyber Security</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- section services end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
